@@ -184,9 +184,7 @@ contract AggregatorManager is
         return userWallets[user];
     }
 
-    function withdrawTotal(
-        address user
-    ) external isHuman {
+    function withdrawTotal(address user) external isHuman {
         UserWalletInfo[] storage wallets = userWallets[msg.sender];
         for (uint256 i = 0; i < wallets.length; i++) {
             UserWalletInfo storage info = wallets[i];
@@ -348,6 +346,9 @@ contract AggregatorManager is
         uint256 walletId
     ) public view returns (bool) {
         return userWallets[user][walletId].proxy != address(0);
+    }
+    function getInitialDeposit(address user) external view returns (uint256) {
+        return initialDeposits[user];
     }
 
     function setWalletImpAddress(address _impAddr) external onlyOwner {

@@ -1844,6 +1844,233 @@
           ]
         }
       }
+    },
+    "18cdecfae51fb7d8cceed44fda1c512f56cf31ec1f8216f0814f97f9c34bbacf": {
+      "address": "0x664936f11F12Cc76eDEddeAd760b580856E2E9C6",
+      "txHash": "0x768f5bc92a46547597f09e1178dba3cf3b4313ee70bf55f9a493fd0a770dc974",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuard",
+            "src": "contracts\\AggregatorManager.sol:16"
+          },
+          {
+            "label": "logicImplementation",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:38"
+          },
+          {
+            "label": "usdc",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:39"
+          },
+          {
+            "label": "pairToken",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:40"
+          },
+          {
+            "label": "univ3NFTManager",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:41"
+          },
+          {
+            "label": "router",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:42"
+          },
+          {
+            "label": "treasury",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:43"
+          },
+          {
+            "label": "initialDeposits",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:44"
+          },
+          {
+            "label": "active",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_bool",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:46"
+          },
+          {
+            "label": "userWallets",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_array(t_struct(UserWalletInfo)1774_storage)dyn_storage)",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:54"
+          },
+          {
+            "label": "walletExists",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "AggregatorManager",
+            "src": "contracts\\AggregatorManager.sol:55"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)73_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_struct(UserWalletInfo)1774_storage)dyn_storage": {
+            "label": "struct AggregatorManager.UserWalletInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(UserWalletInfo)1774_storage)dyn_storage)": {
+            "label": "mapping(address => struct AggregatorManager.UserWalletInfo[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(UserWalletInfo)1774_storage": {
+            "label": "struct AggregatorManager.UserWalletInfo",
+            "members": [
+              {
+                "label": "proxy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "token0",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "token1",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "initialDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
     }
   }
 }
